@@ -22,4 +22,7 @@ function submitForm() {
         R.appendChild(creaGrender)
         R.appendChild(Birth_Date)
     }
+    else{
+        alert("ข้อมูลไม่ครบ")
+    }
 }
