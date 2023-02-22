@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example JavaScript DOM</title>
+    <script src="T1.js"></script>
+    <style>
+      .contrainer{
+        background-color: blueviolet;
+
+      }
+      table{
+    border: solid;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 5%;
+    }
+    table,th,td{
+      text-align: center;
+      border: solid 1px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="contrainer" style="
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 20px;
+">
+      <form><center>
+        <h1>Insert Data</h1>
+        <label for="name" style="margin-right: 300px;">Name</label><br>
+        <input type="text" id="name" name="name" required="" style="padding-left: 5px;padding-right: 5px;padding-top: 3px;width: 250px;"><br>
+        <br>
+        <label for="surname" style="margin-right: 300px;">Surname</label><br>
+        <input type="text" id="surname" name="surname" required="" style="padding-left: 5px;padding-right: 5px;padding-top: 3px;width: 250px;"><br>
+        <br>
+        <label style="margin-right: 300px;">Gender</label><br>
+          <select id="gender" style="padding-left: 5px;padding-right: 5px;padding-top: 3px;width: 250px;">
+          <option value="">ไม่ระบุ</option>
+          <option value="เพศชาย">เพศชาย</option> 
+          <option value="เพศหญิง">เพศหญิง</option>
+          </select>
+        <br><br>
+        <label for="dob" style="margin-right: 300px;">วันเกิด</label><br>
+        <input type="date" id="birth" required="" style="margin-left: 18px;width: 250px;height: 20px;">
+        <br>
+        <br>
+        <input type="button" value="Add" onclick="submitForm()" style="padding-left: 80px;padding-right: 80px;padding-top: 3px;padding-bottom: 3px;">
+      </center>
+      </form>
+    </div>
+    <table id="table" style="border: solid;border-collapse: collapse 1px;">
+        <tr>
+            <td><center>Name</center></td>
+            <td><center>Surname</center></td>
+            <td><center>Gender</center></td>
+            <td><center>Birth date</center></td>
+        </tr>
+    </table>
+  </body>
+</html>
